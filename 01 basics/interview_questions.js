@@ -79,3 +79,38 @@ console.log(arrayFlat(unflattenedArr));
 console.log(unflattenedArr.flat(Infinity))
 
 
+//reverse an array without using any built in method
+
+//by using while loop
+function customReverse(originalArray) {
+  let leftIndex = 0;
+  let rightIndex = originalArray.length - 1;
+  while (leftIndex < rightIndex) {
+    let temp = originalArray[leftIndex];
+    originalArray[leftIndex] = originalArray[rightIndex];
+    originalArray[rightIndex] = temp;
+    leftIndex++;
+    rightIndex--;
+  }
+}
+let myArray = [1, 2, 3, 4, 5,6];
+customReverse(myArray);
+console.log(myArray);
+
+//by using for loop
+// function reverse(arr){
+//   let leftIndex = 0;
+//   let rightIndex = arr.length -1;
+//   for(leftIndex; leftIndex < rightIndex; leftIndex++, rightIndex--){
+//     let temp = arr[leftIndex];
+//     arr[leftIndex] = arr[rightIndex];
+//     arr[rightIndex]= temp
+    
+//   }
+//  // return arr; 
+// }
+
+// let arrayNew = [1,2,3,4,5];
+// reverse(arrayNew);
+// console.log(arrayNew)
+
