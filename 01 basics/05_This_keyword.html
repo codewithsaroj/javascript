@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="studentId">Hi</p>
+    <script>
+      // // Example 1
+      // // this will printing window object
+      // console.log(this);
+
+      // // Example 2
+      // // here this is printing current object
+      // let obj1 = {
+      //   fname: "saroj",
+      //   lname: "kumar",
+      //   age: 26,
+      //   displayName: function () {
+      //     console.log(this);
+      //   },
+      // };
+      // obj1.displayName();
+
+      // // Example 3
+      // //  here this is printing global object i.e window
+      // let obj2 = {
+      //   fname: "saroj",
+      //   lname: "kumar",
+      //   age: 26,
+      //   displayName: () => {
+      //     console.log(this);
+      //   },
+      // };
+      // obj2.displayName();
+
+      // // Example 4
+      // // here this is printing global object i.e window
+      // function disp() {
+      //   console.log(this);
+      // }
+      // disp();
+
+      // // Example 5
+      // // here this is printing current html element
+      // document.getElementById("studentId").addEventListener("click", function () {
+      //   console.log(this);
+      // });
+
+      // //   Example 6
+      // //   here call is printing current object
+      // //   But it is taking parameters indivisually
+      // let obj3 = {
+      //   fname: "saroj",
+      //   lname: "kumar",
+      //   age: 26,
+      // };
+      // function displayName(state, city) {
+      //   console.log(this.fname, this.lname, state, city);
+      // }
+      // displayName.call(obj3, "Odisha", "Cuttack");
+
+      // //  Example 7
+      // //  here apply is printing current object
+      // //  But it is taking parameters in an array
+      // let obj3 = {
+      //   fname: "saroj",
+      //   lname: "kumar",
+      //   age: 26,
+      // };
+      // function displayName(state, city) {
+      //   console.log(this.fname, this.lname, state, city);
+      // }
+      // displayName.apply(obj3, ["Odisha", "Cuttack"]);
+
+      // //  Example 8
+      // //  here apply is printing current object
+      // //  But it is taking indivisual paramets but returns a new function
+      // let obj3 = {
+      //   fname: "saroj",
+      //   lname: "kumar",
+      //   age: 26,
+      // };
+      // function displayName(state, city) {
+      //   console.log(this.fname, this.lname, state, city);
+      // }
+      // displayName.bind(obj3, "Odisha", "Cuttack")();
+
+      // // Example 9
+      // // here this is printing undefined because of strict mode
+      // "use strict";
+      // function disp() {
+      //   console.log(this);
+      // }
+      // disp();
+    </script>
+  </body>
+</html>
