@@ -132,3 +132,28 @@ console.log(myArray);
 // };
 // const value = arrayFn([1,2,3], [2,3,4], [3,4,5], [3,4,6], [5,6,7,8]);
 // console.log(value)
+
+function timeToMinutes (timeStr){
+     const [time, period]=timeStr.split(/(am|pm)/);
+     const [hour, minute]= time.split(".").map((item)=> Number(item));
+     
+   
+    let totalMinutes =0;  
+     if (period === 'pm' && hour !== 12) {
+        totalMinutes = totalMinutes + 12 * 60;  
+    } else if (period === 'am' && hour === 12) {
+        totalMinutes = totalMinutes - 12 * 60;  
+    }else{
+         totalMinutes = hour * 60 + minute;  
+    }
+     console.log(totalMinutes);
+     return totalMinutes
+}
+function calculateTimeValue(str){
+    const [timer_one, timer_two] = str.split("-");
+    let timeOne=  timeToMinutes(timer_one);
+    let timeTwo =  timeToMinutes(timer_two);
+    return (timeTwo - timeOne )
+}
+
+console.log(calculateTimeValue('9.30am-12.45pm'))
