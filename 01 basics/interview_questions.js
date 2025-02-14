@@ -48,6 +48,10 @@
 //   }
 //   return newArray;
 // }
+// let obj ={
+//     "name":"saroj",
+//     "age":34
+// }
 // console.log(entriesMethodWorks(obj));
 
 //Question-05 Flatten array of array without using predefined method
