@@ -143,9 +143,7 @@
 // if i pass '4.05pm-4.35pm' it should return 30.
 // function timeToMinutes (timeStr){
 //      const [time, period]=timeStr.split(/(am|pm)/);
-//      const [hour, minute]= time.split(".").map((item)=> Number(item));
-     
-   
+//      const [hour, minute]= time.split(".").map((item)=> Number(item));   
 //     let totalMinutes =0;  
 //      if (period === 'pm' && hour !== 12) {
 //         totalMinutes = totalMinutes + 12 * 60;  
