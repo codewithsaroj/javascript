@@ -79,24 +79,24 @@
 // console.log(arrayFlat(unflattenedArr));
 
 //Question-06 Flatten array of array using predefined method
-console.log(unflattenedArr.flat(Infinity));
+// console.log(unflattenedArr.flat(Infinity));
 
-//Question-07 reverse an array without using any built in method
-//by using while loop
-function customReverse(originalArray) {
-  let leftIndex = 0;
-  let rightIndex = originalArray.length - 1;
-  while (leftIndex < rightIndex) {
-    let temp = originalArray[leftIndex];
-    originalArray[leftIndex] = originalArray[rightIndex];
-    originalArray[rightIndex] = temp;
-    leftIndex++;
-    rightIndex--;
-  }
-}
-let myArray = [1, 2, 3, 4, 5, 6];
-customReverse(myArray);
-console.log(myArray);
+// //Question-07 reverse an array without using any built in method
+// //by using while loop
+// function customReverse(originalArray) {
+//   let leftIndex = 0;
+//   let rightIndex = originalArray.length - 1;
+//   while (leftIndex < rightIndex) {
+//     let temp = originalArray[leftIndex];
+//     originalArray[leftIndex] = originalArray[rightIndex];
+//     originalArray[rightIndex] = temp;
+//     leftIndex++;
+//     rightIndex--;
+//   }
+// }
+// let myArray = [1, 2, 3, 4, 5, 6];
+// customReverse(myArray);
+// console.log(myArray);
 
 //Question-07 reverse an array without using any built in method
 //By using for loop
@@ -137,27 +137,31 @@ console.log(myArray);
 // const value = arrayFn([1,2,3], [2,3,4], [3,4,5], [3,4,6], [5,6,7,8]);
 // console.log(value)
 
-function timeToMinutes (timeStr){
-     const [time, period]=timeStr.split(/(am|pm)/);
-     const [hour, minute]= time.split(".").map((item)=> Number(item));
+
+//Question-09 Write an function to calcualate time in minutes from a string. if i pass '9.30am-12.45pm' it should return 195,
+// if I pass '7am-8am' it should return 60.
+// if i pass '4.05pm-4.35pm' it should return 30.
+// function timeToMinutes (timeStr){
+//      const [time, period]=timeStr.split(/(am|pm)/);
+//      const [hour, minute]= time.split(".").map((item)=> Number(item));
      
    
-    let totalMinutes =0;  
-     if (period === 'pm' && hour !== 12) {
-        totalMinutes = totalMinutes + 12 * 60;  
-    } else if (period === 'am' && hour === 12) {
-        totalMinutes = totalMinutes - 12 * 60;  
-    }else{
-         totalMinutes = hour * 60 + minute;  
-    }
-     console.log(totalMinutes);
-     return totalMinutes
-}
-function calculateTimeValue(str){
-    const [timer_one, timer_two] = str.split("-");
-    let timeOne=  timeToMinutes(timer_one);
-    let timeTwo =  timeToMinutes(timer_two);
-    return (timeTwo - timeOne )
-}
+//     let totalMinutes =0;  
+//      if (period === 'pm' && hour !== 12) {
+//         totalMinutes = totalMinutes + 12 * 60;  
+//     } else if (period === 'am' && hour === 12) {
+//         totalMinutes = totalMinutes - 12 * 60;  
+//     }else{
+//          totalMinutes = hour * 60 + minute;  
+//     }
+//      console.log(totalMinutes);
+//      return totalMinutes
+// }
+// function calculateTimeValue(str){
+//     const [timer_one, timer_two] = str.split("-");
+//     let timeOne=  timeToMinutes(timer_one);
+//     let timeTwo =  timeToMinutes(timer_two);
+//     return (timeTwo - timeOne )
+// }
 
-console.log(calculateTimeValue('9.30am-12.45pm'))
+// console.log(calculateTimeValue('9.30am-12.45pm'))
