@@ -163,3 +163,27 @@
 // }
 
 // console.log(calculateTimeValue('9.30am-12.45pm'))
+
+
+
+//find the longest string from a string
+// function calcualteLongestStr(str){
+//     let arr = str.split("");
+//     let newStr = '';
+//     let longestStr = '';
+//     let maxLenght=0;
+//     for(let i = 0; i < arr.length; i++){
+//         if(!newStr.includes(arr[i])){
+//             newStr = newStr + arr[i]
+//         }else{
+//             newStr = newStr.slice(newStr.indexOf(arr[i]) + 1) + arr[i]
+//         }
+//         if(newStr.length > maxLenght){
+//             maxLenght = newStr.length;
+//             longestStr = newStr;
+//         }
+//     }
+//     return longestStr;
+// }
+
+// console.log(calcualteLongestStr("abcabcdabcde"))
