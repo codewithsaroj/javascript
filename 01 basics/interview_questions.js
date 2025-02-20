@@ -191,3 +191,17 @@
 // which checking the PR what factors i need to check in git hub
 
 // why we use unit test cases 
+//remove all vowels from a string
+// let name = "saroj";
+// function removeVowel(str){
+// 	let arr = str.split("");
+// 	let vowel = ['a', 'e','i','o','u'];
+// 	let newArr=[];
+// 	for(let i =0; i < arr.length; i ++){
+// 		if(!vowel.includes(arr[i])){
+// 			newArr.push(arr[i]);
+// 		}		
+// 	}	
+// 	return newArr.join("");
+// }
+// console.log(removeVowel(name))
