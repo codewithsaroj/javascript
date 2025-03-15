@@ -55,17 +55,14 @@ console.log(obj);
 
 //Write a for loop to calculate the factorial of a given number.
 function isPrime(num) {
-  let count = 0;
-  for (let i = 1; i <= num; i++) {
-    if (num % i == 0) {
-      count++;
+  if (num < 2) return "not prime"; 
+  
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return "not prime";
     }
   }
-  if (count > 2) {
-    return "not prime";
-  } else {
-    return "prime";
-  }
+  return "prime";
 }
 console.log(isPrime(25));
 
